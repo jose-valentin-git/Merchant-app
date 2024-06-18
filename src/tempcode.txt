@@ -1,0 +1,143 @@
+{/* accordian */}
+      <div
+        className="accordion accordion-flush bg-palepurple"
+         id="accordionFlushExample"
+      >
+        <div className="accordion-item bg-palepurple">
+          <h2 className="accordion-header">
+            <button
+              className="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne"
+              aria-expanded="false"
+              aria-controls="flush-collapseOne"
+            >
+              <div className="col d-flex align-items-start flex-column justify-content-center">
+                <p className="fw-bolder text-purple">New Rx Design</p>
+                <p>12345</p>
+              </div>
+              <div className="fw-bolder text-purple col d-flex align-items-start flex-column justify-content-center">
+                1
+              </div>
+              <div className="fw-bolder text-purple col d-flex align-items-start flex-column justify-content-center">
+                ₹ 300
+              </div>
+              <div className="col d-flex flex-column justify-content-center border-primary">
+                <div className="row">
+                  <div className="col">
+                    <StatusIndicator />
+                  </div>
+                </div>
+              </div>
+              <div className="col d-flex flex-column justify-content-center">
+                <div className="row  align-items-center">
+                  <div className="col-8">
+                    <StatusIndicator />
+                  </div>
+                </div>
+              </div>
+            </button>
+          </h2>
+          <div
+            id="flush-collapseOne"
+            className="accordion-collapse"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div className="accordion-body">
+              Placeholder content for this accordion, which is intended to
+              demonstrate the <code>.accordion-flush</code> class. This is the
+              first item's accordion body.
+            </div>
+          </div>
+        </div>
+      </div>
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+      ************* LEAD SHARED GRAPH DATA STRUCTURE ***************
+      // labels: ["a", "b", "c", "d"],
+  // datasets: [
+  //   {
+  //     label: "Rx Shared",
+  //     data: [3, 2, 9, 7],
+  //     backgroundColor: "rgba(102, 204, 179, 1)",
+  //     borderColor: "black",
+  //   },
+  //   {
+  //     label: "Accepted",
+  //     data: [5, 6, 7, 2],
+  //     backgroundColor: "rgba(108, 93, 211, 1)",
+  //     borderColor: "black",
+  //   },
+  //   {
+  //     label: "Rejected",
+  //     data: [4, 1, 6, 1],
+  //     backgroundColor: "rgba(255, 154, 154, 1)",
+  //     borderColor: "black",
+  //   },
+  //   {
+  //     label: "Expired",
+  //     data: [3, 8, 3, 5],
+  //     backgroundColor: "rgba(120, 161, 222, 1)",
+  //     borderColor: "black",
+  //   },
+  // ], 
+
+  ///////////////////////////////////////////////////
+  <div className="container-fluid">
+      <div className="row text-start my-4 border-bottom">
+        <div className="col-3 d-flex align-items-center">
+          <div className="col">
+            {/*  <PatientSVG /> */}
+            <Skeleton width={50} height={50} borderRadius={10} />
+          </div>
+          <div className="container-fluid overflow-x-hidden">
+            <div className="col">
+              <p className="mt-3">
+                {/*{patient?.patientName} */}
+                <Skeleton height={20} width={200} />
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="col">
+          <div className="d-flex align-items-center justify-content-center">
+            <p className="mt-3">
+              {/*{patient?.mobileNumber} */}
+              <Skeleton height={20} width={200} />
+            </p>
+          </div>
+        </div>
+        <div className="col">
+          <div className="d-flex align-items-center justify-content-center">
+            <p className="mt-3">
+              {/* {patient?.nextVisit} */}
+              <Skeleton height={20} width={200} />
+            </p>
+          </div>
+        </div>
+        <div className="col">
+          <div className=" d-flex align-items-center justify-content-center">
+            <p className="mt-3 ">
+              {/*  {patient?.lastRx} */}
+              <Skeleton height={20} width={200} />
+            </p>
+          </div>
+        </div>
+        <div className="col">
+          <div className="d-flex align-items-center justify-content-center">
+            <p className="mt-3">
+              <div className="col d-flex align-items-center justify-content-center">
+                <div className="btn">
+                  <Skeleton height={50} width={50} />
+                </div>
+                <div>
+                  <Skeleton height={50} width={50} />
+                </div>
+              </div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>

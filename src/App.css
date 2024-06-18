@@ -1,0 +1,158 @@
+.bg-gold {
+  background-color: #ffd383;
+}
+.bg-red {
+  background-color: #f57880;
+}
+.bg-green {
+  background-color: #7fba7a;
+}
+.text-purple {
+  color: #6c5dd3;
+}
+.bg-palewhite {
+  background-color: #f4f2ff;
+}
+.bg-darkgray {
+  background-color: #a5a5a5;
+}
+
+.bg-purple {
+  background-color: #6c5dd3;
+}
+.text-green {
+  color: #43d552;
+}
+.bg-green {
+  background-color: #43d552;
+}
+.bg-red {
+  background-color: #ff0000;
+}
+.text-red {
+  color: #ff0000;
+}
+.text-gray {
+  color: #aeaeae;
+}
+.text-purple {
+  color: #6c5dd3;
+}
+.border-palepurple {
+  border: 1px solid #cbc2fa;
+}
+.bg-palepurple {
+  background-color: #efedff;
+}
+.bg-lightgreen {
+  background-color: #7fba7a;
+}
+.bg-gray {
+  background-color: #e4e4e4;
+}
+.btn-hover:hover {
+  background-color: #6c5dd3;
+  color: black;
+}
+
+.input-text-bg {
+  color: #6c5dd3; /* Change the text color */
+  background-color: #f8f8f8;
+  height: 5vh;
+  padding: 10px;
+}
+.check-box {
+  width: 2vh;
+  height: 2vh;
+}
+.scrollable-container {
+  width: 100%;
+  padding: 0; /* Removed padding */
+  height: auto; /* Changed height to auto */
+  overflow: auto;
+  scrollbar-width: none;
+  -webkit-scrollbar {
+    display: none;
+  }
+}
+
+.scrollable-content {
+  width: 100%;
+}
+
+.text-hover:hover {
+  color: #6c5dd3;
+  transition: all 0.1s;
+}
+
+.icon-container svg {
+  fill: white; /* Set default icon color to white */
+  transition: fill 0.3s; /* Add transition effect */
+}
+
+.icon-container:hover svg,
+.icon-container.active svg {
+  fill: #6c5dd3; /* Change color to purple on hover and active states */
+}
+
+#nav-sm-bar {
+  position: fixed;
+  z-index: 1000; /* Ensure it's on top */
+}
+
+/* The below style is for tool tip */
+.custom-tooltip .tooltip-inner {
+  background-color: #efedff;
+  color: black;
+  max-width: 300px; /* Set the maximum width of the tooltip */
+  width: auto !important;
+  font-weight: bold;
+}
+
+/* #top-bar {
+  position: fixed;
+  z-index: 1000; 
+} */
+
+.content-area {
+  overflow-y: auto; /* Allow vertical scrolling for the content */
+  height: calc(100vh - 80px);
+  width: 100%;
+}
+.content-area::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+.modal-90w {
+  max-width: none !important;
+  width: 90%;
+}
+
+.border-dashed {
+  border-style: dashed !important;
+}
+
+/* Help video css */
+/* App.css */
+.sidebar {
+  transition: width 0.3s ease; /* Smooth transition for sidebar width */
+}
+
+.sidebar-element {
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.doctor-profile {
+  transition: margin-left 0.3s ease; /* Smooth transition for profile margin */
+}
+
+/* To show ... when data exceeds the given space */
+.text-adjust {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* Videos close button hover */
+.close-btn :hover {
+  background-color: #ff0000;
+}
